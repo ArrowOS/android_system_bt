@@ -174,7 +174,6 @@ class BleScannerInterface {
   virtual void StopSync(uint16_t handle) = 0;
 
   virtual void RegisterCallbacks(ScanningCallbacks* callbacks) = 0;
-
   virtual void CancelCreateSync(uint8_t sid, RawAddress address) = 0;
   using SyncTransferCb =
        base::Callback<void(uint8_t /*status*/, RawAddress /*addr*/)>;

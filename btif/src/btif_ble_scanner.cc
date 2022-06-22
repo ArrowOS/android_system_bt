@@ -340,7 +340,6 @@ class BleScannerInterfaceImpl : public BleScannerInterface {
   void RegisterCallbacks(ScanningCallbacks* callbacks) {
     // For GD only
   }
-
   void CancelCreateSync(uint8_t sid, RawAddress address) override {}
   void TransferSync(RawAddress address, uint16_t service_data,
                          uint16_t sync_handle, SyncTransferCb cb) override {}
